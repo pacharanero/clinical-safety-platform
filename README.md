@@ -18,13 +18,7 @@ Install the correct Ruby version (latest stable at the time of starting the proj
 rbenv install 3.0.2
 ```
 
-Create a gemset called `clinical-safety` so that it will be automatically selected by `rbenv` when you are in the project root directory.
-
-```shell
-rbenv gemset create 3.0.2 clinical-safety
-```
-
-Install all the dependencies to this `clinical-safety` gemset
+Install all the dependencies
 
 ```shell
 bundle install
