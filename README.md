@@ -2,7 +2,7 @@
 
 This is a proof of concept, 'Minimum Viable Product' Clinical Safety Platform for Clinical Safety Officers, primarily within the UK NHS and at related system suppliers.
 
-This POC is built using Rails 7
+This POC is built using Rails 7 and Bootstrap
 
 ## Development setup
 

@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  system_name: MyString
+  description: MyText
+  supplier: one
+  clinical_safety_officer: one
+  go_live_date: 2022-02-14
+  review_date: 2022-02-14
+  technical_owner: one
+  organisation: one
+
+two:
+  system_name: MyString
+  description: MyText
+  supplier: two
+  clinical_safety_officer: two
+  go_live_date: 2022-02-14
+  review_date: 2022-02-14
+  technical_owner: two
+  organisation: two

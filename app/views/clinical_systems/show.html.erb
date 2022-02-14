@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @clinical_system %>
+
+<div>
+  <%= link_to "Edit this clinical system", edit_clinical_system_path(@clinical_system) %> |
+  <%= link_to "Back to clinical systems", clinical_systems_path %>
+
+  <%= button_to "Destroy this clinical system", @clinical_system, method: :delete %>
+</div>

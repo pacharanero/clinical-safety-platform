@@ -1,0 +1,57 @@
+<%= form_with(model: clinical_system) do |form| %>
+  <% if clinical_system.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(clinical_system.errors.count, "error") %> prohibited this clinical_system from being saved:</h2>
+
+      <ul>
+        <% clinical_system.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :system_name, style: "display: block" %>
+    <%= form.text_field :system_name %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :supplier_id, style: "display: block" %>
+    <%= form.text_field :supplier_id %>
+  </div>
+
+  <div>
+    <%= form.label :clinical_safety_officer_id, style: "display: block" %>
+    <%= form.text_field :clinical_safety_officer_id %>
+  </div>
+
+  <div>
+    <%= form.label :go_live_date, style: "display: block" %>
+    <%= form.date_field :go_live_date %>
+  </div>
+
+  <div>
+    <%= form.label :review_date, style: "display: block" %>
+    <%= form.date_field :review_date %>
+  </div>
+
+  <div>
+    <%= form.label :technical_owner_id, style: "display: block" %>
+    <%= form.text_field :technical_owner_id %>
+  </div>
+
+  <div>
+    <%= form.label :organisation_id, style: "display: block" %>
+    <%= form.text_field :organisation_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
