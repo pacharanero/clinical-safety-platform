@@ -1,6 +1,5 @@
 # PostgreSQL
 
-
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -8,27 +7,17 @@ default: &default
 development:
   <<: *default
   database: clinical_safety_development
-  host: <%= ENV['DATABASE_URL'] %>
-  port: 5432
+  host: localhost
   pool: 5
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
   timeout: 5000
 
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: myapp_test
-#   pool: 5
-#   username: brenden
-#   password:
-#   timeout: 5000
-  
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: myapp_test
-#   pool: 5
-#   username: brenden
-#   password:
-#   timeout: 5000
+test:
+  <<: *default
+  database: clinical_safety_test
+
+production:
+  <<: *default
+  database: myapp_test
+
